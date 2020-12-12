@@ -2,7 +2,7 @@
 -- Author: Phuc Nguyen
 -- File : XOR2.vhd
 -- Design Units:
---    entity XOR2  
+--    entity AND2  
 --          function: XOR 2 inputs
 --          input: a,b
 --          output: c = a xor b

@@ -1,0 +1,50 @@
+
+-- 16 bits Full Adder
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity FA32bits is
+  port ( A, B: in std_logic_vector(31 downto 0);
+         Cin : in std_logic;
+         S   : out std_logic_vector(31 downto 0);
+         Cout: out std_logic);
+end entity;
+
+architecture structural of FA32bits is
+  
+  component FA16bits
+  port ( A, B: in std_logic_vector(15 downto 0);
+           Cin : in std_logic;
+           S   : out std_logic_vector(15 downto 0);
+           Cout: out std_logic);
+  end component;
+  
+  signal c1, c2, c3, c4, c5, c6, c7 , c8, c9 , c10, c11, c12, c13, c14, c15 ,c16
+         c17, c18, c19, c20 ,c21 ,c22, c23, c24, c25, c26, c27, c28, c29, c30, c31, c32 : std_logic;
+  
+  begin 
+    
+    U1:  FA port map (A_Fadd => A(0), B_Fadd =>B(0), C_Fadd => Cin, S_Fadd=> S(0), CA_Fadd => c1);
+    U2:  FA port map (A_Fadd => A(1), B_Fadd =>B(1), C_Fadd => c1,  S_Fadd=> S(1), CA_Fadd => c2);
+    U3:  FA port map (A_Fadd => A(2), B_Fadd =>B(2), C_Fadd => c2,  S_Fadd=> S(2), CA_Fadd => c3);
+    U4:  FA port map (A_Fadd => A(3), B_Fadd =>B(3), C_Fadd => c3,  S_Fadd=> S(3), CA_Fadd => c4);
+
+    U5:  FA port map (A_Fadd => A(4), B_Fadd =>B(4), C_Fadd => c4,  S_Fadd=> S(4), CA_Fadd => c5);
+    U6:  FA port map (A_Fadd => A(5), B_Fadd =>B(5), C_Fadd => c5,  S_Fadd=> S(5), CA_Fadd => c6);
+    U7:  FA port map (A_Fadd => A(6), B_Fadd =>B(6), C_Fadd => c6,  S_Fadd=> S(6), CA_Fadd => c7);
+    U8:  FA port map (A_Fadd => A(7), B_Fadd =>B(7), C_Fadd => c7,  S_Fadd=> S(7), CA_Fadd => c8);      
+      
+    U9:  FA port map (A_Fadd => A(8),  B_Fadd =>B(8),  C_Fadd => c8,   S_Fadd=> S(8), CA_Fadd => c9);
+    U10: FA port map (A_Fadd => A(9),  B_Fadd =>B(9),  C_Fadd => c9,   S_Fadd=> S(9), CA_Fadd => c10);
+    U11: FA port map (A_Fadd => A(10), B_Fadd =>B(10), C_Fadd => c10,  S_Fadd=> S(10), CA_Fadd => c11);
+    U12: FA port map (A_Fadd => A(11), B_Fadd =>B(11), C_Fadd => c11,  S_Fadd=> S(11), CA_Fadd => c12);
+
+    U13: FA port map (A_Fadd => A(12), B_Fadd =>B(12), C_Fadd => c12,  S_Fadd=> S(12), CA_Fadd => c13);
+    U14: FA port map (A_Fadd => A(13), B_Fadd =>B(13), C_Fadd => c13,  S_Fadd=> S(13), CA_Fadd => c14);
+    U15: FA port map (A_Fadd => A(14), B_Fadd =>B(14), C_Fadd => c14,  S_Fadd=> S(14), CA_Fadd => c15);
+    U16: FA port map (A_Fadd => A(15), B_Fadd =>B(15), C_Fadd => c15,  S_Fadd=> S(15), CA_Fadd => Cout);   
+          
+end architecture;
+
+

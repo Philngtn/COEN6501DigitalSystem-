@@ -1,0 +1,29 @@
+-- 4 bits Full Adder
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity FA4bits is
+  port ( A, B: in std_logic_vector(3 downto 0);
+         Cin : in std_logic;
+         S   : out std_logic_vector(3 downto 0);
+         Cout: out std_logic);
+end entity;
+
+architecture structural of FA4bits is
+  
+  component FA is
+    port (A_Fadd, B_Fadd, C_Fadd: in std_logic;
+          S_Fadd, CA_Fadd       : out std_logic);
+  end component;
+  
+  signal c1, c2, c3 : std_logic;
+  
+  begin 
+    
+    U1: FA port map (A_Fadd => A(0), B_Fadd =>B(0), C_Fadd => Cin, S_Fadd=> S(0), CA_Fadd => c1);
+    U2: FA port map (A_Fadd => A(1), B_Fadd =>B(1), C_Fadd => c1,  S_Fadd=> S(1), CA_Fadd => c2);
+    U3: FA port map (A_Fadd => A(2), B_Fadd =>B(2), C_Fadd => c2,  S_Fadd=> S(2), CA_Fadd => c3);
+    U4: FA port map (A_Fadd => A(3), B_Fadd =>B(3), C_Fadd => c3,  S_Fadd=> S(3), CA_Fadd => Cout);
+      
+end architecture;

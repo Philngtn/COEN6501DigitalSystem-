@@ -1,11 +1,12 @@
+
 -- ************************************************************************
 -- Author: Phuc Nguyen
--- File : XOR2.vhd
+-- File : NAND3.vhd
 -- Design Units:
---    entity XOR2  
---          function: XOR 2 inputs
---          input: a,b
---          output: c = a xor b
+--    entity NAND3  
+--          function: NAND 3 inputs
+--          input: a,b,c
+--          output: d = not (a and b and c) 
 --    architecture XOR_arch:
 --          truth_table based sum_of_products
 --          implementation
@@ -28,12 +29,12 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity XOR2 is 
-  port ( A, B  : in  std_logic;
-         C     : out std_logic);
+entity NAND3 is 
+  port ( A, B, C  : in  std_logic;
+         D     : out std_logic);
 end entity;
 
-architecture behavior of XOR2 is
+architecture behavior of NAND3 is
 begin 
-  C <= A xor B;
+  D <= not (A and B and C);
 end architecture;

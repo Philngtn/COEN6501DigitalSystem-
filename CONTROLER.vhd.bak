@@ -1,0 +1,48 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity controler is 
+  port ( clk, clear, load, END_FLAG : in std_logic;
+         load_cmd, reset_cmd : out std_logic);
+         
+end entity;
+
+architecture rtl of controller is
+  
+  type state_type is (IDLE, INIT, PROCESSING)
+  signal state: state_type;
+  
+  begin 
+    process( clk, clear)
+      begin
+        if clear = '0' then
+          
+          reset_cmd <= '0';
+          state <= IDLE;
+          
+          
+        elsif (clk'event and clk = '1') then
+          case ( state ) is
+                
+              when IDLE => 
+                
+              reset_cmd <= '1'
+              load_cmd <= '1';
+              
+              if load = '0' then
+                 state <= INIT;
+              else
+                 state <= IDLE;
+              end if;
+              
+              when INIT =>
+                load_cmd <= 0
+                state <= PROCESSING;
+              
+              when PROCESSING =>
+                
+                if END_FLAG = 1 then
+                  state <= IDLE   
+                end if
+              

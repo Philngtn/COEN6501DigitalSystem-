@@ -1,0 +1,43 @@
+library ieee;
+
+use ieee.std_logic_1164.all;
+
+
+entity MUL2ADD is 
+  port ( A , B : in std_logic_vector( 7 downto 0);
+         C , C_FLOAT  : out std_logic_vector (15 downto 0);
+         
+         END_FLAG : out std_logic);
+end entity;
+
+architecture structual of MUL2ADD is
+  
+  component MUL8x8 is
+      port ( inputA8x8, inputB8x8  : in  std_logic_vector(7 downto 0);
+             output8x8        :      out std_logic_vector(15 downto 0));
+  end component;
+  
+  component FA16bits is
+    port ( A, B: in std_logic_vector(15 downto 0);
+         Cin : in std_logic;
+         S   : out std_logic_vector(15 downto 0);
+         Cout: out std_logic);
+  end component;
+  
+  signal outMUL, outADD: std_logic_vector(15 downto 0);
+  signal Cout : std_logic;
+  constant constant3 : std_logic_vector(15 downto 0) :="0000000000000100";
+  
+  
+  begin 
+    
+    U1: MUL8x8 port map ( inputA8x8 => A, inputB8x8 => B, output8x8 => outMUL);
+      
+    U2: FA16bits port map (A => outMUL, B => constant3, Cin => '0', S => outADD, Cout => Cout);
+      
+    C <= "00" & outADD(15 downto 2);
+    C_FLOAT <= outADD; 
+    
+    END_FLAG <= '1';
+    
+end architecture;

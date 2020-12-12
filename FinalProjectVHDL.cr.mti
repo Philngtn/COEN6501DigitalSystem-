@@ -1,9 +1,30 @@
-/nfs/home/p/ph_e/FinalProject/HA.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/HA.vhd
+/nfs/home/p/ph_e/FinalProject/MUL2ADD.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/MUL2ADD.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity mul2add
+-- Compiling architecture structual of mul2add
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/HA.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/HA.vhd
 Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Loading package standard
 -- Loading package std_logic_1164
 -- Compiling entity ha
 -- Compiling architecture structural of ha
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/REG2bits.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/REG2bits.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity reg2bits
+-- Compiling architecture structual of reg2bits
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/REG_tb.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/REG_tb.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity reg_tb
+-- Compiling architecture testbench of reg_tb
 
 } {} {}} /nfs/home/p/ph_e/FinalProject/XOR2.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/XOR2.vhd
 Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
@@ -12,6 +33,15 @@ Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Compiling entity xor2
 -- Compiling architecture behavior of xor2
 
+} {} {}} /nfs/home/p/ph_e/FinalProject/Mul8x8_tb.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/Mul8x8_tb.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package math_real
+-- Compiling entity mul8x8_tb
+-- Compiling architecture tb of mul8x8_tb
+
 } {} {}} /nfs/home/p/ph_e/FinalProject/OR2.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/OR2.vhd
 Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Loading package standard
@@ -19,12 +49,26 @@ Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Compiling entity or2
 -- Compiling architecture behavior of or2
 
+} {} {}} /nfs/home/p/ph_e/FinalProject/LogicFSM.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/LogicFSM.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity logicfsm
+-- Compiling architecture strcutual of logicfsm
+
 } {} {}} /nfs/home/p/ph_e/FinalProject/FA_tb.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/FA_tb.vhd
 Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Loading package standard
 -- Loading package std_logic_1164
 -- Compiling entity fa_tb
 -- Compiling architecture tb of fa_tb
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/REG8bits_tb.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/REG8bits_tb.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity reg8bits_tb
+-- Compiling architecture testbench of reg8bits_tb
 
 } {} {}} /nfs/home/p/ph_e/FinalProject/FA4bits.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/FA4bits.vhd
 Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
@@ -40,12 +84,47 @@ Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Compiling entity and2
 -- Compiling architecture behavior of and2
 
+} {} {}} /nfs/home/p/ph_e/FinalProject/System.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/System.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity system
+-- Compiling architecture strutural of system
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/AND3.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/AND3.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity and3
+-- Compiling architecture behavior of and3
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/REG.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/REG.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity reg
+-- Compiling architecture structural of reg
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/Mul8x8.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/Mul8x8.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity mul8x8
+-- Compiling architecture structural of mul8x8
+
 } {} {}} /nfs/home/p/ph_e/FinalProject/Backup4x4.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/Backup4x4.vhd
 Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Loading package standard
 -- Loading package std_logic_1164
 -- Compiling entity mul4x4
 -- Compiling architecture structural of mul4x4
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/REG16bits.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/REG16bits.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity reg16bits
+-- Compiling architecture structual of reg16bits
 
 } {} {}} /nfs/home/p/ph_e/FinalProject/Mul2x2_tb.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/Mul2x2_tb.vhd
 Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
@@ -62,6 +141,28 @@ Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Compiling entity and4
 -- Compiling architecture behavior of and4
 
+} {} {}} /nfs/home/p/ph_e/FinalProject/REG8bits.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/REG8bits.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity reg8bits
+-- Compiling architecture structual of reg8bits
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/FAdder8bits.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/FAdder8bits.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity fadder8bits
+-- Compiling architecture structural of fadder8bits
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/System_tb.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/System_tb.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity system_tb
+-- Compiling architecture testbench of system_tb
+
 } {} {}} /nfs/home/p/ph_e/FinalProject/Mul2x2.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/Mul2x2.vhd
 Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Loading package standard
@@ -77,6 +178,21 @@ Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Compiling entity fa4bits_tb
 -- Compiling architecture tb of fa4bits_tb
 
+} {} {}} /nfs/home/p/ph_e/FinalProject/FINAL_SYSTEM_tb.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/FINAL_SYSTEM_tb.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity final_system_tb
+-- Compiling architecture testbench of final_system_tb
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/NAND2.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/NAND2.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity nand2
+-- Compiling architecture behavior of nand2
+
 } {} {}} /nfs/home/p/ph_e/FinalProject/Mul4x4_tb.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/Mul4x4_tb.vhd
 Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Loading package standard
@@ -85,12 +201,72 @@ Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Compiling entity mul4x4_tb
 -- Compiling architecture tb of mul4x4_tb
 
-} {} {}} /nfs/home/p/ph_e/FinalProject/Mul4x4.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/Mul4x4.vhd
+} {} {}} /nfs/home/p/ph_e/FinalProject/REG16bits_tb.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/REG16bits_tb.vhd
 Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Loading package standard
 -- Loading package std_logic_1164
--- Compiling entity mul4x4
--- Compiling architecture structural of mul4x4
+-- Compiling entity reg16bits_tb
+-- Compiling architecture testbench of reg16bits_tb
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/Controller.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/Controller.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Compiling entity controller
+-- Compiling architecture rtl of controller
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/NAND3.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/NAND3.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity nand3
+-- Compiling architecture behavior of nand3
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/DFF_tb.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/DFF_tb.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity dff_tb
+-- Compiling architecture testbench of dff_tb
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/FA16bits_tb.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/FA16bits_tb.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity fa16bits_tb
+-- Compiling architecture tb of fa16bits_tb
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/FINAL_SYSTEM.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/FINAL_SYSTEM.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity final_system
+-- Compiling architecture rtl of final_system
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/FSM.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/FSM.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity fsm
+-- Compiling architecture structual of fsm
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/NAND_tb.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/NAND_tb.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity nand_tb
+-- Compiling architecture testbench of nand_tb
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/FA8bits_tb.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/FA8bits_tb.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity fa8bits_tb
+-- Compiling architecture tb of fa8bits_tb
 
 } {} {}} /nfs/home/p/ph_e/FinalProject/INV1.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/INV1.vhd
 Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
@@ -99,11 +275,32 @@ Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Compiling entity inv1
 -- Compiling architecture behavior of inv1
 
+} {} {}} /nfs/home/p/ph_e/FinalProject/Mul4x4.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/Mul4x4.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity mul4x4
+-- Compiling architecture structural of mul4x4
+
 } {} {}} /nfs/home/p/ph_e/FinalProject/FA.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/FA.vhd
 Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 -- Loading package standard
 -- Loading package std_logic_1164
 -- Compiling entity fa
 -- Compiling architecture structural of fa
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/DFF.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/DFF.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity dff
+-- Compiling architecture structual of dff
+
+} {} {}} /nfs/home/p/ph_e/FinalProject/FA16bits.vhd {1 {vcom -work work -2002 -explicit -vopt /nfs/home/p/ph_e/FinalProject/FA16bits.vhd
+Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity fa16bits
+-- Compiling architecture structural of fa16bits
 
 } {} {}}

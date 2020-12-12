@@ -1,0 +1,83 @@
+
+
+-- ************************************************************************
+-- Author: Phuc Nguyen
+-- File : Mul4x4_tb.vhd
+-- 
+-- Mul8x8 testBench
+-- 
+-- Revision history
+--    Version: 1.0:
+--    Date: 11/2020
+--    Comments: 
+--
+-- ************************************************************************
+library ieee;
+
+  use ieee.std_logic_1164.all;
+  use ieee.numeric_std.all;
+  use ieee.math_real.all;
+
+
+entity Mul8x8_tb is 
+end entity;
+-- ************************************************************************
+
+architecture TB of Mul8x8_tb is 
+
+  component Mul8x8
+    port ( inputA8x8, inputB8x8  : in  std_logic_vector(7 downto 0);
+         output8x8     :      out std_logic_vector(15 downto 0));
+  end component;
+  
+  signal inputA_tb, inputB_tb: std_logic_vector(7 downto 0);
+  signal output_tb           : std_logic_vector(15 downto 0);
+  
+  
+begin
+
+  U1 : Mul8x8 port map (inputA8x8 => inputA_tb, inputB8x8 => inputB_tb, output8x8 => output_tb);
+
+  process
+  
+    variable seed1, seed2: positive;  -- seed values for random generator
+    variable rand: real;              -- random real-number value in range 0 to 1.0
+    variable int_rand: integer;       -- random integer value in range 0..2^8-1
+    variable stim: std_logic_vector(7 downto 0);  -- random 8-bit stimulus
+    
+    variable seed3, seed4: positive;  -- seed values for random generator
+    variable rand2: real;              -- random real-number value in range 0 to 1.0
+    variable int_rand2: integer;       -- random integer value in range 0..2^8-1
+    variable stim2: std_logic_vector(7 downto 0);  -- random 8-bit stimulus
+    
+    
+  begin
+    
+    test_loop: for k in 0 to 20 loop
+    
+      uniform(seed1, seed2, rand);              -- generate random number
+      -- rescale to 0..255, find integer part
+      int_rand := integer(trunc(rand*255.0));
+      -- convert to std_logic_vector
+      stim := std_logic_vector(to_unsigned(int_rand, stim'length));
+      
+      inputA_tb <= stim;
+      
+      uniform(seed4, seed3, rand2);              -- generate random number
+      -- rescale to 0..255, find integer part
+      int_rand2 := integer(trunc(rand2*200.0));
+      -- convert to std_logic_vector
+      stim2 := std_logic_vector(to_unsigned(int_rand2, stim2'length));
+      
+      inputB_tb <= stim2;
+      wait for 10 ns;     
+  
+    end loop test_loop;
+      
+  
+    wait;
+    
+  end process;
+
+end architecture;
+

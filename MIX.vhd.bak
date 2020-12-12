@@ -1,0 +1,107 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity MIX is
+
+  port( A, B  : in std_logic_vector(7 downto 0);
+        load, clear, clk : in std_logic;
+        
+        END_FLAG : out std_logic;
+        Z : out std_logic_vector(15 downto 0));
+        
+end entity;
+
+
+architecture Mixed of MIX is
+  
+  component FA16bits
+    port ( A, B: in std_logic_vector(15 downto 0);
+           Cin : in std_logic;
+           
+           S   : out std_logic_vector(15 downto 0);
+           Cout: out std_logic);
+  end component;
+  
+  component MUL8x8 is
+    port ( inputA8x8, inputB8x8  : in  std_logic_vector(7 downto 0);
+           output8x8        :      out std_logic_vector(15 downto 0));
+  end component;
+  
+  component Controller
+      port ( clk, clear, load, Cout: in std_logic;
+             load_cmd ,clear_cmd: out std_logic);
+  end component;
+  
+  component REG8bits is
+          port ( clear , clk , load : in std_logic;
+                 input8bits : in std_logic_vector (7 downto 0);
+                 output8bits: out std_logic_vector (7 downto 0));   
+  end component; 
+        
+  component REG16bits is
+          port ( clear , clk , load : in std_logic;
+                input16bits : in std_logic_vector (15 downto 0);
+                output16bits: out std_logic_vector (15 downto 0));     
+  end component;
+  
+  signal load_cmd , clear_cmd : std_logic;
+  signal RA, RB : std_logic_vector(7 downto 0);
+  
+  signal RA_MUL, RB_MUL : std_logic_vector(7 downto 0);
+  signal RC ,RZ, RC_ADD, RZ_OUT : std_logic_vector(15 downto 0);
+  signal Cfour : std_logic_vector(15 downto 0) := "0000000000000100";
+
+  
+  begin
+    
+  
+    
+    process(clk, clear)
+      
+      begin 
+        if clear = '0' then
+              clear_cmd <= '0';
+              load_cmd <= '1';
+              
+        else
+          clear_cmd <= clear;
+          load_cmd <= load;
+          
+          if load = '0' then
+              END_FLAG <= '0';
+             
+              U2: REG8bits   port map( clear => clear_cmd, clk => clk, load => load_cmd, 
+                                          input8bits => A, output8bits => RA);
+                 
+                 
+                 
+              U3: REG8bits   port map( clear => clear_cmd, clk => clk, load => load_cmd, 
+                                          input8bits => B, output8bits => RB);
+              
+              U4: MUL8x8    port map ( inputA8x8=> RA_MUL, inputB8x8 => RB_MUL, output8x8 => RC);
+      
+              U6: FA16bits  port map ( A => RC_ADD, B=> Cfour, Cin => '0', S => RZ);
+       
+              U5: REG16bits port map (clear => clear_cmd, clk => clk, load => load_cmd,
+                            input16bits => RZ, output16bits => RZ_OUT);
+                            
+              Z <= RZ_OUT;              
+              
+              END_FLAG <= '1';
+              
+           end if;
+         end if;
+    end process;
+    
+  end architecture;    
+              
+              
+      
+      
+      
+      
+      
+      
+      
+      
+
