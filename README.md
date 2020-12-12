@@ -1,2 +1,5 @@
-# COEN6501DigitalSystem-
-Final project for a system which has the arithmetic: F = (x + y)/4 + 1.
+# DigitalSystem
+
+Final project:
+
+Designed a system which perform the arithmetic: F = (x + y)/4 + 1.
