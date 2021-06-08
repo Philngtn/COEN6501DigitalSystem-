@@ -15,19 +15,19 @@
 
 ![image](https://user-images.githubusercontent.com/60360984/121117861-daab5880-c7e6-11eb-99ab-277926b740ea.png)
 
-### Simulation and Timing
+### Simulation and Timing:
 
 ![image](https://user-images.githubusercontent.com/60360984/121117911-ee56bf00-c7e6-11eb-90e7-05005f1d2a79.png)
 
-### RTL Schematic
+### RTL Schematic:
 
 ![image](https://user-images.githubusercontent.com/60360984/121117969-04fd1600-c7e7-11eb-8ca8-b821d8a68f9c.png)
 
-### Tech Schematic
+### Tech Schematic:
 
 ![image](https://user-images.githubusercontent.com/60360984/121117989-12b29b80-c7e7-11eb-8df9-f82f69733c25.png)
 
-### Area report
+### Area report:
 
 ![image](https://user-images.githubusercontent.com/60360984/121118041-23fba800-c7e7-11eb-82c8-9ba8bef084e0.png)
 
